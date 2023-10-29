@@ -4,16 +4,32 @@ import React from "react";
 import styles from "@/pages/styles.module.scss";
 import SmallSquareAnimated from "@/components/SmallSquareAnimated/SmallSquareAnimated";
 import { heropageTexts } from "@/constants";
-import TreeBackground from "@/svgs/TreeBackground";
-import Spline from "@splinetool/react-spline";
+import TreeBackground from "@/svgs/TreesBackground/TreeBackground";
+import Bird from "@/svgs/Bird/Bird";
+import SlowBird from "@/svgs/SlowBird/SlowBird";
+import ThirdBird from "@/svgs/ThirdBird/ThirdBird";
+import ModalDots from "@/components/ModalDots/ModalDots";
+import HeroCard, { CardSlide } from "@/components/HeroCard/HeroCard";
 
 const Heropage = () => {
+  const slides: CardSlide[] = [
+    { title: "Test", description: "this is a test", image: "/heroImgOne.jpg" },
+    {
+      title: "TestTwo",
+      description: "this is a another test",
+      image: "/heroImgTwo.jpg",
+    },
+  ];
+
   return (
     <div className={styles.heropage}>
       <div className={styles.leftSideHero}>
         <div className={styles.leftSideHeroUp}>
-          <SmallSquareAnimated />
-          <p>{heropageTexts.secondaryText}</p>
+          <HeroCard slides={slides} />
+          <div className={styles.secondaryTextWrapper}>
+            <SmallSquareAnimated />
+            <p>{heropageTexts.secondaryText}</p>
+          </div>
         </div>
         <div className={styles.leftSideHeroDown}>
           <h2>{heropageTexts.mainTextWordOne}</h2>
@@ -23,9 +39,10 @@ const Heropage = () => {
       </div>
       <div className={styles.rightSideHero}>
         <TreeBackground />
-        <div className={styles.splineElement}>
-          <Spline scene="https://prod.spline.design/R6ikkOlvMTpjMzQL/scene.splinecode" />
-        </div>
+        <Bird />
+        <SlowBird />
+        <ThirdBird />
+        <ModalDots />
       </div>
     </div>
   );

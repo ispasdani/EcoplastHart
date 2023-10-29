@@ -23,3 +23,9 @@ export const aboutUsTexts = {
   thirdParagraph:
     "The collection and waste recovery being our main desire to step on a cleaner and healthier planet.",
 };
+
+export const modalDotsTexts = {
+  firstDot: "Did you know?",
+  secondDot: "Find out about this.",
+  thirdDot: "It's so easy",
+};

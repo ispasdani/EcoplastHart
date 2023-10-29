@@ -8,7 +8,6 @@
   .leftSideHero {
     width: 50%;
     height: 90vh;
-    background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,23 +16,54 @@
     .leftSideHeroUp {
       width: 100%;
       height: 40%;
-      padding: 50px;
+      padding-left: 50px;
+      padding-bottom: 10px;
+      padding-top: 20px;
       display: flex;
-      background-color: aqua;
-      justify-content: flex-start;
-      align-items: flex-end;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      background-color: lightblue;
+
+      .secondaryTextWrapper {
+        display: flex;
+      }
     }
 
     .leftSideHeroDown {
       width: 100%;
       height: 60%;
-      background-color: tomato;
       padding: 10px 0px 10px 50px;
+      position: relative;
 
-      h2 {
-        font-size: 76px;
+      h2:first-of-type {
+        font-size: 100px;
         font-weight: 500;
         letter-spacing: 2px;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        z-index: 2;
+      }
+
+      h2:nth-of-type(2) {
+        font-size: 100px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 120px;
+        left: 50px;
+        z-index: 2;
+      }
+
+      h2:nth-of-type(3) {
+        font-size: 100px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 240px;
+        left: 50px;
+        z-index: 2;
       }
     }
   }
@@ -41,18 +71,9 @@
   .rightSideHero {
     width: 50%;
     height: 90vh;
-    background-color: cadetblue;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .splineElement {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 290px;
-      height: 290px;
-      background-color: red;
-    }
+    position: relative;
   }
 }
