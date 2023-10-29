@@ -7,7 +7,9 @@ export const navTexts = {
 };
 
 export const heropageTexts = {
-  mainText: "Cleaning nation collaboratively",
+  mainTextWordOne: "Cleaning",
+  mainTextWordTwo: "nation",
+  mainTextWordThree: "collaboratively",
   secondaryText: "Join the recycling revolution and make the world greener.",
 };
 

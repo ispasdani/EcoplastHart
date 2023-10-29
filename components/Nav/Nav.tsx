@@ -1,9 +1,7 @@
-"use client";
-
 import React from "react";
 import { navTexts } from "@/constants";
 import styles from "@/components/Nav/styles.module.scss";
-import { motion } from "framer-motion";
+import CircleToSquareMotionDiv from "@/components/CircleToSquareMotionDiv/CircleToSquareMotionDiv";
 
 const Nav = () => {
   return (
@@ -15,15 +13,7 @@ const Nav = () => {
         <li>{navTexts.navLink3}</li>
       </ul>
       <div className={styles.language}>
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1.2, 1, 1],
-            rotate: [0, 0, 270, 270, 0],
-            borderRadius: ["50%", "20%", "50%", "30%", "50%"],
-          }}
-          transition={{ ease: "linear", duration: 4, repeat: Infinity }}
-          className={styles.languageCircle}
-        ></motion.div>
+        <CircleToSquareMotionDiv />
         <p>{navTexts.languageEn}</p>
       </div>
     </nav>
