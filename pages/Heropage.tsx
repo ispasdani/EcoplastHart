@@ -10,6 +10,7 @@ import SlowBird from "@/svgs/SlowBird/SlowBird";
 import ThirdBird from "@/svgs/ThirdBird/ThirdBird";
 import ModalDots from "@/components/ModalDots/ModalDots";
 import HeroCard, { CardSlide } from "@/components/HeroCard/HeroCard";
+import VideoCard from "@/components/VideoCard/VideoCard";
 
 const Heropage = () => {
   const slides: CardSlide[] = [
@@ -25,7 +26,7 @@ const Heropage = () => {
     <div className={styles.heropage}>
       <div className={styles.leftSideHero}>
         <div className={styles.leftSideHeroUp}>
-          <HeroCard slides={slides} />
+          <VideoCard videoPath="/videoHeroPage.mp4" />
           <div className={styles.secondaryTextWrapper}>
             <SmallSquareAnimated />
             <p>{heropageTexts.secondaryText}</p>

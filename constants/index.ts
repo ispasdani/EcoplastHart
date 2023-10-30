@@ -29,3 +29,7 @@ export const modalDotsTexts = {
   secondDot: "Find out about this.",
   thirdDot: "It's so easy",
 };
+
+export const videoCardTexts = {
+  videoCardText: "Join us on this mission",
+};

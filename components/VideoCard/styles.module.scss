@@ -1,0 +1,26 @@
+.videoCard {
+  width: 580px;
+  border-radius: 20px;
+  position: relative;
+
+  .videoPlayer {
+    border-radius: 20px;
+  }
+
+  .videoCardText {
+    position: absolute;
+    bottom: 20px;
+    color: var(--main-black);
+    left: 20px;
+    background-color: var(--main-white);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .videoCardText:hover {
+    background-color: var(--neon-green);
+    color: var(--main-white);
+  }
+}
