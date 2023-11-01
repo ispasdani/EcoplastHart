@@ -1,10 +1,12 @@
 .videoCard {
-  width: 580px;
-  border-radius: 20px;
+  width: 90%;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
   position: relative;
 
   .videoPlayer {
-    border-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
   }
 
   .videoCardText {
@@ -20,7 +22,7 @@
   }
 
   .videoCardText:hover {
-    background-color: var(--neon-green);
+    background-color: var(--homeSection-companyTitle);
     color: var(--main-white);
   }
 }

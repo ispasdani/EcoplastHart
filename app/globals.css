@@ -8,6 +8,9 @@
   --main-white: #ffffff;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --homeSection-background: #111111;
+  --homeSection-companyTitle: #578847;
+  --homeSection-backgroundSecondary: #538d22;
 }
 
 * {

@@ -1,12 +1,12 @@
-import Nav from "@/components/Nav/Nav";
-import Heropage from "@/pages/Heropage";
 import React from "react";
+import HomeSection from "@/pages/homepage/HomeSection";
+import WhyChooseUs from "@/pages/whyChooseUs/WhyChooseUs";
 
 const Homepage = () => {
   return (
     <div className="text-color">
-      <Nav />
-      <Heropage />
+      <HomeSection />
+      <WhyChooseUs />
     </div>
   );
 };

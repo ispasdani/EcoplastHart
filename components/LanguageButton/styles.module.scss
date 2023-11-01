@@ -1,0 +1,46 @@
+.languageBtn {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--main-white);
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  -webkit-animation: bordersRoundedToSquare 2s infinite both;
+  animation: bordersRoundedToSquare 2s infinite both;
+  margin-left: 10px;
+  color: var(--main-white);
+  cursor: pointer;
+
+  @keyframes bordersRoundedToSquare {
+    0% {
+      border-top-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    30% {
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    40% {
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    50% {
+      border-top-left-radius: 11px;
+      border-bottom-right-radius: 11px;
+    }
+    65% {
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    75% {
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    100% {
+      border-top-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
