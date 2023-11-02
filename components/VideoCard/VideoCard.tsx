@@ -4,11 +4,12 @@ import { videoCardTexts } from "@/constants";
 
 type VideoCardProps = {
   videoPath: string;
+  width: string;
 };
 
-const VideoCard = ({ videoPath }: VideoCardProps) => {
+const VideoCard = ({ videoPath, width }: VideoCardProps) => {
   return (
-    <div className={styles.videoCard}>
+    <div className={styles.videoCard} style={{ width: `${width}` }}>
       <video loop autoPlay muted className={styles.videoPlayer}>
         <source src={`${videoPath}`} type="video/mp4" />
       </video>

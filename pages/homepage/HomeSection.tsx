@@ -26,7 +26,7 @@ const HomeSection = () => {
       </div>
       <div className={styles.homeSectionRight}>
         <div className={styles.homeSectionRightDecorEl}></div>
-        <VideoCard videoPath="/videoHeroPage.mp4" />
+        <VideoCard videoPath="/videoHeroPage.mp4" width="90%" />
       </div>
     </div>
   );

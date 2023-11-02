@@ -1,0 +1,87 @@
+.whyChooseUsPage {
+  width: 100%;
+  height: 100vh;
+
+  .whyChooseUsEntry {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+    h3 {
+      font-size: 70px;
+      font-weight: 500;
+      font-style: italic;
+      color: var(--homeSection-companyTitle);
+      position: absolute;
+      top: 20px;
+      left: 25px;
+    }
+
+    h2 {
+      font-size: 120px;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--homeSection-companyTitle);
+      position: absolute;
+      top: 120px;
+      left: 25px;
+    }
+
+    .elementWhyContainer {
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  .whyChooseUsRest {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .restLeft {
+      width: 40%;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .whyTextWrapper {
+        width: 60%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 20px 0px;
+
+        .squareWrapper {
+          width: 7%;
+        }
+
+        p {
+          width: 93%;
+        }
+      }
+    }
+
+    .restRight {
+      width: 60%;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column;
+
+      .decorElWhy {
+        width: 200px;
+        height: 80px;
+        background-color: var(--homeSection-companyTitle);
+        border-top-left-radius: 20px;
+      }
+    }
+  }
+}
