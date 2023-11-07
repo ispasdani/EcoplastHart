@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/pages/whyChooseUs/styles.module.scss";
 import VideoCard from "@/components/VideoCard/VideoCard";
 import SmallSquareAnimated from "@/components/SmallSquareAnimated/SmallSquareAnimated";
+import CircleToSquareMotionDiv from "@/components/CircleToSquareMotionDiv/CircleToSquareMotionDiv";
 
 const WhyChooseUs = () => {
   return (
@@ -54,6 +55,11 @@ const WhyChooseUs = () => {
         <div className={styles.restRight}>
           <div className={styles.decorElWhy}></div>
           <VideoCard videoPath="/whyVideo.mp4" width="90%" />
+        </div>
+      </div>
+      <div className={styles.whyCircleWrapper}>
+        <div className={styles.whyCircleWrapperAbsolute}>
+          <CircleToSquareMotionDiv color="#578847" message="See more" />
         </div>
       </div>
     </div>

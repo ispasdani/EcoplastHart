@@ -3,8 +3,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "@/components/CircleToSquareMotionDiv/styles.module.scss";
+import { type } from "os";
 
-const CircleToSquareMotionDiv = () => {
+type CircleToSquareMotionDivProps = {
+  width?: string;
+  height?: string;
+  color?: string;
+  message?: string;
+};
+
+const CircleToSquareMotionDiv = ({
+  width,
+  height,
+  color,
+  message,
+}: CircleToSquareMotionDivProps) => {
   return (
     <motion.div
       animate={{
@@ -14,6 +27,11 @@ const CircleToSquareMotionDiv = () => {
       }}
       transition={{ ease: "linear", duration: 4, repeat: Infinity }}
       className={styles.languageCircle}
+      style={{
+        width: `${width}`,
+        height: `${height}`,
+        borderColor: `${color}`,
+      }}
     ></motion.div>
   );
 };
