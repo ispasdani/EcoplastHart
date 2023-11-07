@@ -57,11 +57,6 @@ const WhyChooseUs = () => {
           <VideoCard videoPath="/whyVideo.mp4" width="90%" />
         </div>
       </div>
-      <div className={styles.whyCircleWrapper}>
-        <div className={styles.whyCircleWrapperAbsolute}>
-          <CircleToSquareMotionDiv color="#578847" message="See more" />
-        </div>
-      </div>
     </div>
   );
 };
