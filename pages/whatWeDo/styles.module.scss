@@ -1,8 +1,26 @@
 .whatWeDoContainer {
   width: 100%;
-  height: 100vh;
-  //   background-color: var(--main-white);
-  background-color: red;
+  min-height: 150vh;
+  background-color: var(--main-white);
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .collectContainer {
+    min-height: 75vh;
+    width: 100%;
+    background-color: red;
+    padding-top: 185px;
+    display: flex;
+  }
+
+  .recycleContainer {
+    min-height: 75vh;
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+  }
 }

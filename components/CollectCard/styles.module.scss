@@ -1,0 +1,92 @@
+.collectCard {
+  width: 190px;
+  height: 250px;
+  background-color: black;
+  border-radius: 20px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  transition: 0.3s all ease-in-out;
+
+  .collectCardIconOne {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .collectCardIconTwo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-position: ce;
+  }
+
+  .bigCircleLeft {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: 0.8s all ease-in-out;
+  }
+
+  .smallCircleLeft {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.8s all ease-in-out;
+  }
+
+  .bigCircleRight {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: 0.8s all ease-in-out;
+  }
+
+  .smallCircleRight {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.8s all ease-in-out;
+  }
+}
+
+.collectCard:hover {
+  transform: translateY(-10px);
+}
+
+.collectCard:hover .smallCircleLeft {
+  bottom: -60px;
+  right: -60px;
+}
+
+.collectCard:hover .bigCircleLeft {
+  top: -100px;
+  left: -100px;
+}
+
+.collectCard:hover .smallCircleRight {
+  bottom: -60px;
+  left: -60px;
+}
+
+.collectCard:hover .bigCircleRight {
+  top: -100px;
+  right: -100px;
+}
