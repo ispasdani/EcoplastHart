@@ -13,19 +13,45 @@ const WhatWeDo = () => {
           backgroundColor="var(--dark-green)"
           color="var(--main-white)"
           textOne="Metal Scrap"
-          textTwo="Non-ferrous waste"
-          textThree="Ferrous waste"
           iconPath="./iron.svg"
           circlesDecorRightBoolean={true}
           circlesDecorColor="var(--light-green)"
         />
         <CollectCard
+          backgroundImage="url(./copperWire.jpg)"
+          backgroundPosition="center"
+          backgroundSize="cover"
+          color="var(--main-white)"
+          textOne="Non-ferrous waste"
+          iconPath="./iron.svg"
+        />
+        <CollectCard
+          backgroundColor="var(--light-green)"
+          color="var(--main-white)"
+          textOne="Ferrous waste"
+          iconPath="./iron.svg"
+          circlesDecorLeftBoolean={true}
+          circlesDecorColor="var(--dark-green)"
+        />
+        <CollectCard
+          backgroundImage="url(./petBottle.jpg)"
+          backgroundPosition="center"
+          backgroundSize="cover"
+          textOne="PET plastic"
+          color="var(--main-white)"
+          fontSize="20px"
+        />
+        <CollectCard
+          backgroundColor="var(--light-green)"
+          textOne="Plastic Waste"
+          color="var(--main-white)"
+          fontSize="20px"
+        />
+        <CollectCard
           backgroundImage="url(./imageNaturePath.jpg)"
           backgroundPosition="center"
           backgroundSize="cover"
-          textOne="Plastic"
-          textTwo="PET plastic"
-          textThree="Pet Aluminium"
+          textOne="Pet Aluminium"
           color="var(--main-white)"
           fontSize="20px"
         />
